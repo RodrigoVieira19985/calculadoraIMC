@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="display">
+    
+    <main class="displaycolumn">
+        <h1>Calculadora IMC</h1>
+        <p>Calcule seu percentual de gordura corporal, taxa metabólica basal e macros para sua dieta</p>
+        <form action="">
+            <section class="displaycolumn">
+                <h2>Sexo</h2>
+                <div class="display">
+                    <div class="display botao">
+                        <input type="radio" name="sexo" id="m" checked>
+                        <label for="m">Masculino</label>
+                    </div>
+                    <div class="display botao">
+                        <input type="radio" name="sexo" id="f">
+                        <label for="f">Feminino</label>
+                    </div>
+                </div>
+            </section>
+            <section class="displaycolumn">
+                <h2>Dados corporais</h2>
+                <div class="display">
+                    <div class="informacoes">
+                        <label for="i">Idade(anos)</label>
+                        <input type="number" name="idade" id="idade" value="30">   
+                    </div>
+                    <div class="informacoes">
+                        <label for="p">Peso(kg)</label>
+                        <input type="number" name="peso" id="peso" value="75">
+                    </div>
+                </div>
+                <div class="display">
+                    <div class="informacoes">
+                        <label for="altura">Altura(cm)</label>
+                        <input type="number" name="altura" id="altura" value="175">   
+                    </div>
+                    <div class="informacoes">
+                        <label for="cintura">Cintura(cm)</label>
+                        <input type="number" name="cintura" id="cintura"  value="88">
+                    </div>
+                </div>
+                <div class="display" id="display2">
+                    <div class="informacoes">
+                        <label for="pescoco">Pescoço(cm)</label>
+                        <input type="number" name="pescoco" id="pescoco" value="38">   
+                    </div>
+                    <div class="informacoes" id="quad">
+                        <label for="quadril">Quadril(cm)</label>
+                        <input type="number" name="quadril" id="quadril"  value="88">   
+                    </div>
+                </div> 
+            </section>
+            <section class="displaycolumn">
+                <h2>Atividades e Objetivos</h2>
+                <div class="display">
+                    <div class="informacoes">
+                        <label for="atividade">Atividade</label>
+                        <select id="atividade" name="atividade">
+                            <option value="1.2">Sedentário</option>
+                            <option value="1.3">Levemente ativo</option>
+                            <option value="1.5">Moderadamente ativo</option>
+                            <option value="1.7">Muito ativo</option>
+                        </select> 
+                    </div>
+                    <div class="informacoes">
+                        <label for="objetivo">Objetivos</label>
+                        <select id="objetivo" name="objetivo">
+                            <option value="-300">Emagrecer</option>
+                            <option value="0">Manter</option>
+                            <option value="300">Ganhar massa</option>
+                        </select> 
+                    </div>
+                </div>
+            </section>
+            <section class="displaycolumn">
+                <h2>Resultado da sua Avaliação</h2>
+                <div class="display2">
+                    <div class="resultado displaycolumn">
+                        <h3>Percentual de Gordura</h2>
+                        <p id="taxa">21.3</p>
+                    </div>
+                    <div class="resultado displaycolumn">
+                        <h3>Massa Magra</h2>
+                        <p id="magra">59.0</p>
+                    </div>
+                    </div>
+                <div class="display2">
+                    <div class="resultado displaycolumn">
+                        <h3>Massa Gorda</h2>
+                        <p id="gorda">16.0</p>
+                    </div>
+                    <div class="resultado displaycolumn">
+                        <h3>Taxa metabólica</h2>
+                        <p id="metabolica">1790</p>
+                    </div>
+                </div>
+            </section>
+            <section class="displaycolumn">
+                <h2>Resultado do seu metabolismo</h2>
+                <div class="display2">
+                    <div class="resultado displaycolumn">
+                        <h3>Taxa metabólica</h2>
+                        <p id="taxa2">1790</p>
+                    </div>
+                    <div class="resultado displaycolumn">
+                        <h3>Gasto total</h2>
+                        <p id="gastoTotal">2148</p>
+                    </div>
+                    </div>
+                <div class="display2">
+                    <div class="resultado displaycolumn">
+                        <h3>Calorias</h2>
+                        <p id="calorias">1848</p>
+                    </div>
+                </div>
+            </section>
+            <section class="displaycolumn">
+                <h2>Macros para sua Dieta</h2>
+                <div class="displaycolumn" id="macros">
+                    <div class="macro">
+                        <div>
+                            <h3>Proteina</h2>
+                        </div>
+                        <div>
+                            <h3>Carboidratos</h2>
+                        </div>
+                        <div>
+                            <h3>Gordura</h2> 
+                        </div>
+                        
+                           
+                    </div>
+                    <div class="macro" id="macro2">
+                        <div>
+                            <p id="proteina">1790</p>
+                        </div>
+                        <div>
+                            <p id="carbo">2148</p>
+                        </div>
+                        <div>
+                            <p id="gord">1848</p>
+                        </div>
+                        
+                        
+                    </div>
+                    </div>
+            </section>
+        </form>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

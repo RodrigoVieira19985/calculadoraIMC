@@ -1,0 +1,33 @@
+var taxa = document.getElementById("taxa")
+
+document.addEventListener("input", function(c){
+    var sexo = document.getElementById("m").checked
+    var idade = document.getElementById("idade").value
+    var peso = document.getElementById("peso").value
+    var altura = document.getElementById("altura").value
+    var pescoco = document.getElementById("pescoco").value
+    var cintura = document.getElementById("cintura").value
+    var imc = (peso) / ((altura / 100) * (altura / 100))
+    var quadril
+
+    if(sexo==false){
+        var quad=document.getElementById("quad")
+        quad.style.display="flex"
+        quadril = document.getElementById("quadril").value
+        
+    }else{
+        var quad=document.getElementById("quad")
+        quad.style.display="none"
+    }
+
+    if(sexo == true){
+        console.log("entrou")
+        var percentual = 86.010 * Math.log10(cintura - pescoco) - 70.041 * Math.log10(altura) + 30.30 + 2
+    }else{
+        var percentual = 163.205 * Math.log10((cintura + quadril - pescoco)) - 97.684 * Math.log10(altura) - 104.912
+    }
+
+
+
+    taxa.innerHTML = percentual
+})

@@ -1,0 +1,179 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #262627;
+    padding: 15px;
+}
+
+main{
+    background-color: #262627;
+    width: 950px;
+    height: 900px;
+}
+
+form{
+    width: 81%;
+    background-color: #161616;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+section{
+    width: 90%;
+    background-color: rgb(80, 71, 71);
+    padding: 15px;
+    margin-bottom: 15px;
+    color: white;
+    border-radius: 15px;
+}
+
+p{
+    margin: 15px 0px;
+    font-size: 24px;
+    text-align: center;
+}
+
+h1, h2{
+    color: #cf1818;
+}
+
+h1{
+    font-size: 48px;
+}
+
+h2{
+    font-size: 36px;
+    margin: 15px;
+}
+
+input, select, option{
+    padding: 5px;
+    color: white;
+    font-size: 24px;
+    background-color: #1B1B1A;
+    border: solid 3px  #262627;
+    width: max-content;
+}
+
+select{
+    margin-top: 15px;
+}
+
+.botao input{
+    margin-right: 5px;
+}
+
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+.resultado{
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #1B1B1A;
+    width: 40%;
+    border: solid 3px  #262627;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.resultado p{
+    color: #ff0000;
+    font-size: 24px;
+}
+
+.displaycolumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botao{
+    border: solid white 2px;
+    padding: 10px;
+    margin-left: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.informacoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.informacoes input{
+    width: 280px;
+    height: 25px;
+    margin-top: 5px;
+}
+
+#quad{
+    display: none;
+}
+
+#display2{
+    justify-content: end;
+}
+
+#macros{
+    width: 100%;
+    
+}
+
+.macro{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.macro div{
+    width: 30%;
+    text-align: center;
+}
+
+.macro div{
+    background-color: #cf1818;
+    color: white;
+}
+
+#macro2 div{
+    background-color: #161616;
+    color: #ff0000;
+}
+
+div h3{
+    margin: 5px 0px;
+}
+
+@media (max-width: 800px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    .informacoes input{
+        width: 200px;
+    }
+}
