@@ -19,16 +19,6 @@ document.addEventListener("input", function(c){
     var atividade = document.getElementById("atividade").value
     var objetivo = parseInt(document.getElementById("objetivo").value)
     var imc = (peso) / ((altura / 100) * (altura / 100))
-    var quadril
-    if(sexo==false){
-        var quad=document.getElementById("quad")
-        quad.style.display="none"
-        quadril = parseInt(document.getElementById("quadril").value)
-        
-    }else{
-        var quadril=document.getElementById("quad")
-        quad.style.display="none"
-    }
 
     if(sexo == true){
         console.log("entrou")
