@@ -9,7 +9,7 @@ var proteinas = document.getElementById("proteina")
 var carbo = document.getElementById("carbo")
 var gord = document.getElementById("gord")
 
-document.addEventListener("input", function(c){
+document.addEventListener("change", function(c){
     var sexo = document.getElementById("m").checked
     var idade = document.getElementById("idade").value
     var peso = document.getElementById("peso").value
